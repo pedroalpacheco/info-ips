@@ -1,8 +1,7 @@
-var geoip = require('geoip-lite');
- 
-var ip = "35.187.180.136";
 
-var geo = geoip.lookup(ip)
-//var geo = geoip.pretty(ip)
- 
-console.log(geo);
+function mostra(ip){
+    var geoip = require('geoip-lite');
+    var geo = geoip.lookup(ip)
+    console.log(geo)
+}
+mostra("35.187.180.136")
